@@ -1,0 +1,5 @@
+Needs to complete to make this pera o kahon working game:
+
+1. I will get the indices of prizes.
+2. I will put them on prize-txt-container.
+3. Random it

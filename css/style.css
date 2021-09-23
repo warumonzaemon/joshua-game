@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins','Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+}
+
+
+.border-red {
+    border: solid 2px red;
+}
+
+header {
+    background-color: rgb(250, 104, 21);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+
+}
+iframe {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+.kuya-wil-container
+ {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 2px solid black; */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+#pera-kahon-title {
+    background-color: rgb(44,92,25);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 53px;
+}
+
+
+.kuya-wil-container h2,
+.prize-money-container #money {
+    margin-left: 10px;
+}
+
+.prize-money-and-instructions-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 105px;
+    width: auto;
+    margin-left: 20px;
+}
+
+
+.start-and-stop-game {
+    margin-top: 10px;
+}
+
+header img {
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 0 0 20px;
+}
+
+.kuya-wil-container h2 {
+    transition: all 1s ease;
+}
+.prize-money-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.pera-kahon-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.instructions-container {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+}
+.instructions-container button {
+    width: 80%;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: rgb(36,84,202);
+    font-weight: bold;
+    color: fuch
+}
+
+
+
+
+.box {
+    width: 18%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+}
+.box img {
+    height: 100%;
+    width: 70%;
+}
+
+.box button {
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+/* box colors */
+
+
+.bg-yellow {
+    background-color: yellow; 
+}
+
+.bg-yellowgreen {
+    background-color: yellowgreen;
+}
+.bg-green {
+    background-color: green;
+}
+
+.bg-teal {
+    background-color: teal;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-blueviolet{
+    background-color: blueviolet;
+}
+
+.bg-violet {
+    background-color: violet;
+}
+
+.bg-redviolet {
+    background-color: #c71585
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-yelloworange{
+    background-color: #ffae42
+}
+
+/* end of box colors */
+
+
+
+
+/* This is the css for the buttons that will pop up in the center of the page */
+
+.instructions-bg,
+.start-game-bg,
+.btn-choose-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.4s;
+}
+
+
+
+/* This class is for javascript when the instructions-bg is active */
+
+.instructions-bg-active,
+.start-game-bg-active,
+.btn-choose-bg-active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+
+    
+}
+
+/* This is the modal for every buttons */
+.instructions-modal {
+    position: relative;
+    background-color: white;
+    border: 7px solid rgb(255,58,19);
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.start-game-modal {
+    position: relative;
+    background-color: white;
+    border: 5px solid rgb(255,58,19);
+    width: 38%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.btn-choose-modal {
+    position: relative;
+    background-color: white;
+    border: 5px solid rgb(255,58,19);
+    width: 35%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.btn-confirmation-modal {
+    position: relative;
+    background-color: white;
+    width: 35%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+
+
+
+.btn-container{
+    margin-bottom: 90px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 2px solid black; */
+   
+}
+
+.btn-pera-kahon-container {
+    margin-bottom: 90px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 2px solid black; */
+   
+}
+
+.btn-container button,
+.btn-pera-kahon {
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    width: 25%;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+    width: 70%;
+}
+
+li,
+strong {
+    margin-top: 10px;
+}
+
+.instructions-modal h3 {
+    margin-top: 20px;
+}
+.instructions-modal p,
+.instructions-modal strong {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+#instructions-paragraph {
+    margin: 0 0 2px ;
+    width: 70%;
+}
+
+
+/* This is for all the close buttons available out there */
+.close-button-choose,
+.close-button-instructions,
+.close-button-game
+ {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+/* Additional effects */
+.effects:active {
+    height: 30x;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pera O Kahon</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <iframe id ="iframe" width="560" height="315" src="https://www.youtube.com/embed/OPMy4Xo_N18?start=493&end=498" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+    <header>
+        <div class="kuya-wil-container">
+            <h1 id="pera-kahon-title" >Pera O Kahon </h1>
+            
+        </div> 
+            <div class="instructions-container">
+                <button class="instructions-button">Instructions</button>
+                <button class="start-game" onclick="">Start the game</button>
+                <button class="restart-game">Restart</button>
+            </div>
+            <div class="audio-container">
+                <audio id="audio">
+                    <source src="./mp3/Game KNB Theme 2001 (Extended).mp3" type="audio/mpeg" >
+                </audio>
+            </div>
+        </div>
+    </header>
+        <!-- This is for the instruction, start-game, and end game button that will pop up in  the center of the page -->
+        <div class="instructions-bg">
+            <div class="instructions-modal">
+                <h3>Hello Gamers!</h3>
+                <p>This is a game of luck and also a psychological game, so good luck!</p>
+                <p><strong>Instructions:</strong></p>
+                <ul>
+                    <li id="instructions-paragraph">We have 10 boxes on this game. </li>
+                    <li>On those 10 boxes, you will need to eliminate the first 3 boxes.</li>
+                    <li>There's a chance that you will eliminate one or two of the main prizes, that's okay. But if you have eliminated all the prizes, you can restart the game by clicking the button restart.</li>
+                    <li>If you have not eliminated all the main prizes, then 4th box is your last chance to win the other prizes</li>
+                    <li>The host will ask you to choose between pera o kahon.</li>
+                    <li>If you choose pera, you will take the offered money with what amount you've accumulated everytime you choose kahon. 
+                        <br>
+                    </li>
+                    <li>If you chose box all the way to the end, and that box contains bokya, you will receive nothing.</li>
+                    <li>Otherwise, if that box contains the any of the 3 main prizes, then you won!</li>
+                </ul>
+                <strong>Pro tip: Kung ano isinisigaw ng puso mo, sundin mo!</strong>
+                <strong></strong>
+                <span class="close-button-instructions">X</span>
+            </div>
+        </div>
+
+        <!-- This is for start the game button, this modal will pop-up, asking you to confirm if you want to start the game or not. -->
+        <div class="start-game-bg">
+            <div class="start-game-modal">
+                <h2>Do you know now how to play the game?</h2>
+                <h3>If YES, then LET'S GO!</h3>
+                <div class="btn-container">
+                    <button class="yes">Yes</button>
+                    <button class="no">No</button>
+                </div>
+                <span class="close-button-game">X</span>
+            </div>
+        </div>
+    <main>
+        <div class="pera-kahon-container">
+        </div>
+    </main>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
